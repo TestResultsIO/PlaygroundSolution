@@ -92,12 +92,5 @@
         }
       ]
     }
-  ],
-  "Interactions": [
-    {
-      "MethodName": "SaveConfirmationCode",
-      "DisplayName": "SaveConfirmationCode",
-      "ReturnType": "System.Void"
-    }
   ]
 }

@@ -24,10 +24,6 @@ namespace NewSimulation_Model.Screens
         }
 
 
-        [ModelCapability("SaveConfirmationCode")]
-        public void SaveConfirmationCode()
-        {
-            t.SetVariable("confirmationcode", ConfirmationCode.ReadValue());
-        }
+        
     }
 }
