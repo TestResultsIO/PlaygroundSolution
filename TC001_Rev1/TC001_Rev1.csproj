@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Title>NewSimulation</Title>
+    <Product>NewSimulation</Product>
+    <Description>Testcase TestResults.io Project</Description>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="EvidenceDirectory\**" />
+    <None Remove="lib\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Progile.TRIO.BaseModel" Version="5.6.0.1-preview1" />
+    <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Progile.ATE.Common">
+      <HintPath>lib\Progile.ATE.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Progile.ATE.TestFramework">
+      <HintPath>lib\Progile.ATE.TestFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="NewSimulation_Model" />
+    <Using Include="Progile.ATE.Common" />
+    <Using Include="Progile.ATE.TestFramework;" />
+    <Using Include="Progile.TRIO.BaseModel" />
+    <Using Include="TestImages.TC001_Rev1">
+      <Static>True</Static>
+    </Using>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewSimulation_1_0\NewSimulation_1_0.csproj" />
+  </ItemGroup>
+
+</Project>

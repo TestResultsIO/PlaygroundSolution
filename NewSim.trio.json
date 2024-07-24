@@ -1,0 +1,28 @@
+{
+  "CustomerId": "00000000-0000-0000-0000-000000000010",
+  "ProjectId": "7fdeaafa-8e57-4ba0-b326-b6a0210f667e",
+  "ServerUri": "https://stage.testresults.io",
+  "Environments": [
+    {
+      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentImage, Progile.Trio.Designer",
+      "ImagePathStaticEnvironment": null,
+      "RaiseImagePathPopupBeforeExecution": false,
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "Name": "Simulation"
+    },
+    {
+      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentLocal, Progile.Trio.Designer",
+      "MonitorId": 0,
+      "Id": "b8b8ab42-bcaa-4b67-a156-7768345b60c8",
+      "Name": "LocalMonitor"
+    }
+  ],
+  "SolutionVersion": "8.1",
+  "SolutionType": null,
+  "ElementsFilter": [],
+  "GetLabelTextSettings": {
+    "OcrPadding": 5,
+    "MaxDetectedCharacters": 40,
+    "MaxDetectedWords": 5
+  }
+}

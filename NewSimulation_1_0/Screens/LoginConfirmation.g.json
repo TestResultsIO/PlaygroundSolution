@@ -1,0 +1,166 @@
+{
+  "Id": "b2245522-09a7-4214-89c1-90cc9b1b3d66",
+  "Name": "LoginConfirmation",
+  "DisplayName": "Login Confirmation",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens",
+  "OpenImagePath": "Images\\LoginConfirmation\\Screen_Loaded",
+  "ScreenImagePath": "Images\\LoginConfirmation\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1280,
+    "Height": 720
+  },
+  "Elements": [
+    {
+      "Id": "0e625599-3745-4f13-9a0d-d8201082bf3a",
+      "Position": {
+        "X": 475,
+        "Y": 326,
+        "Width": 123,
+        "Height": 16
+      },
+      "Name": "ConfirmationCode",
+      "Type": "Progile.TRIO.BaseModel.TextBox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Confirmation Code"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\LoginConfirmation\\Confirmation Code"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "6b347920-0aa7-4644-8d3a-e5bde5c0e46b",
+      "Position": {
+        "X": 475,
+        "Y": 400,
+        "Width": 65,
+        "Height": 19
+      },
+      "Name": "Language",
+      "Type": "Progile.TRIO.BaseModel.Dropdown",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Language"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\LoginConfirmation\\Language\\DropdownTextBox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "cbabf89f-5d00-4e78-aaeb-faf8b7acbca5",
+      "Position": {
+        "X": 22,
+        "Y": 258,
+        "Width": 49,
+        "Height": 76
+      },
+      "Name": "MobileLink",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Mobile Link"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\LoginConfirmation\\Mobile Link\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "96530389-1060-4cca-875f-eff5592d81a3",
+      "Position": {
+        "X": 660,
+        "Y": 499,
+        "Width": 62,
+        "Height": 14
+      },
+      "Name": "CONFIRM",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "CONFIRM"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\LoginConfirmation\\CONFIRM\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ]
+}

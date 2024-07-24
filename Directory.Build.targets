@@ -1,0 +1,29 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+	  <Compile Update="**\*.g.cs">
+		  <DependentUpon>$([System.String]::Copy("%(Filename)").Replace(".g", "")).cs</DependentUpon>
+	  </Compile>
+	  <None Update="**\*.g.json">
+		  <DependentUpon>$([System.String]::Copy("%(Filename)").Replace(".g", "")).cs</DependentUpon>
+	  </None>
+    <None Update="**\*.user.json">
+      <DependentUpon>$([System.String]::Copy("%(Filename)").Replace(".user", "")).json</DependentUpon>
+    </None>
+	</ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\**\*.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <CoreCompileDependsOn>$(CoreCompileDependsOn);GeneratedImageClasses</CoreCompileDependsOn>
+  </PropertyGroup>
+  <Target Name="GeneratedImageClasses">
+    <ItemGroup>
+      <Compile Include="$(IntermediateOutputPath)GeneratedClasses\**\*.struct.cs" />
+    </ItemGroup>
+  </Target>
+
+</Project>
