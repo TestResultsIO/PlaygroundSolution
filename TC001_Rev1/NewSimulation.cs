@@ -19,7 +19,7 @@ public class NewSimulation : TestCase
         App.LoginConfirmation.MobileLink.Click(App.Mobile.WaitForAppear);
         t.SetVariable("confirmationCode", App.Mobile.ConfirmationCode.ReadValue());
         App.Mobile.WebapplicationLink.Click(App.LoginConfirmation.WaitForAppear);
-        App.LoginConfirmation.ConfirmationCode.Enter("$confirmationCode");
+        App.LoginConfirmation.ConfirmationCode.Enter("{{confirmationCode}}");
         App.LoginConfirmation.Language.SelectValue($@"English");
         App.LoginConfirmation.CONFIRM.Click(App.LoginConfirmation.WaitForDisappear);
     }
