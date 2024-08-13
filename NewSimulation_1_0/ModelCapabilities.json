@@ -1,10 +1,6 @@
 {
   "ModelTypeList": [
     {
-      "TypeName": "Progile.TRIO.EnvironmentModel.Window",
-      "BaseTypeName": "Progile.TRIO.BaseModel.BaseScreen"
-    },
-    {
       "TypeName": "Progile.TRIO.BaseModel.BaseScreen",
       "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
       "Interactions": [
@@ -90,10 +86,6 @@
           "HintText": "Sets the search area of this element based on a different element (\"Element in area\")\r\nin the same area to prevent the problem that this element occurs multiple times on the screen."
         }
       ]
-    },
-    {
-      "TypeName": "Progile.TRIO.BaseModel.IWindow",
-      "BaseTypeName": null
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.Button",
@@ -284,6 +276,12 @@
           "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
           "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}.",
           "HintText": "Opens the dropdown list and verifies that the provided value\r\nis present in the dropdown list (includes scrolling). \r\nCloses the dropdown list again."
+        },
+        {
+          "MethodName": "GetSelectedValue",
+          "DisplayName": "Get selected value",
+          "ReturnType": "System.String",
+          "HintText": "Reads the selected text from the Dropdown with OCR"
         }
       ]
     },
@@ -502,7 +500,7 @@
         },
         {
           "MethodName": "ReadValue",
-          "DisplayName": "Read Value",
+          "DisplayName": "Read value",
           "ReturnType": "System.String",
           "HintText": "Reads the value in the Search Rectangle determined by the Label and the relative position using OCR."
         }
@@ -584,7 +582,7 @@
         },
         {
           "MethodName": "GetText",
-          "DisplayName": "Get Text",
+          "DisplayName": "Get text",
           "ReturnType": "System.String",
           "HintText": "Copies or reads the text from the TextBox (depending on the TextBoxType)"
         },
@@ -741,6 +739,14 @@
           "IsObsolete": true
         }
       ]
+    },
+    {
+      "TypeName": "Progile.TRIO.EnvironmentModel.Window",
+      "BaseTypeName": "Progile.TRIO.BaseModel.BaseScreen"
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.IWindow",
+      "BaseTypeName": null
     },
     {
       "TypeName": "NewSimulation_Model.Screens.RecentSign_InActivityTable",
@@ -957,52 +963,54 @@
         {
           "Parameters": [
             {
-              "Name": "targetColumn",
-              "DisplayName": "targetColumn",
+              "Name": "selection",
+              "DisplayName": "selection",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             },
             {
-              "Name": "targetRow",
-              "DisplayName": "targetRow",
+              "Name": "selectionValue",
+              "DisplayName": "selectionValue",
               "IsOptional": false,
-              "Type": "TRow"
+              "Type": "System.String"
             },
             {
-              "Name": "ocrEngineParameters",
-              "DisplayName": "ocrEngineParameters",
-              "IsOptional": true,
-              "Type": "Progile.ATE.Common.OcrEngineParameters"
+              "Name": "columnToRead",
+              "DisplayName": "columnToRead",
+              "IsOptional": false,
+              "Type": "Progile.TRIO.BaseModel.Column"
             }
           ],
           "MethodName": "GetCellContent",
-          "DisplayName": "Get Cell Content (OCR)",
-          "ReturnType": "System.String"
+          "DisplayName": "Get cell content (OCR)",
+          "ReturnType": "System.String",
+          "HintText": "Finds a row using the provided \"selection\" and \"selectionValue\"\r\nand gets the value from the column \"columnToRead\" in this row"
         },
         {
           "Parameters": [
             {
-              "Name": "column",
-              "DisplayName": "column",
+              "Name": "selection",
+              "DisplayName": "selection",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             },
             {
-              "Name": "row",
-              "DisplayName": "row",
+              "Name": "selectionValue",
+              "DisplayName": "selectionValue",
               "IsOptional": false,
-              "Type": "TRow"
+              "Type": "System.String"
             },
             {
-              "Name": "offsetFromLeftBorder",
-              "DisplayName": "offsetFromLeftBorder",
-              "IsOptional": true,
-              "Type": "System.Nullable`1<System.Int32>"
+              "Name": "columnToRead",
+              "DisplayName": "columnToRead",
+              "IsOptional": false,
+              "Type": "Progile.TRIO.BaseModel.Column"
             }
           ],
           "MethodName": "GetCellContentWithClipboard",
-          "DisplayName": "Get Cell Content (Clipboard)",
-          "ReturnType": "System.String"
+          "DisplayName": "Get cell content (Clipboard)",
+          "ReturnType": "System.String",
+          "HintText": "Finds a row using the provided \"selection\" and \"selectionValue\"\r\nand copies the value from the column \"columnToRead\" in this row after double-clicking the cell"
         }
       ]
     },

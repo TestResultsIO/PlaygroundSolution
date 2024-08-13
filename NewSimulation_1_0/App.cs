@@ -37,7 +37,7 @@ namespace NewSimulation_Model
             SutLocale = new SutLocale(t, SystemHelpers, language);
 
             // Set this to the size of your application or inherit from Progile.TRIO.EnvironmentModel.Window and use its ScreenSelect
-            Window = new Select(SystemHelpers.UsableScreen);
+            Window = new Select(SystemHelpers.FullScreen);
 
             // Init Screens
             InitScreens();
@@ -54,21 +54,7 @@ namespace NewSimulation_Model
 
         public IScroller GetScroller(Select searchRectangle = null, bool requiresFocus = false)
         {
-            // If required, define an IScroller by either:
-            //
-            // 1. In case of a Windows application
-            // return WindowsScroller.GetScroller(Tester, searchRectangle ?? Window);
-            //
-            // or
-            // 2. Use the GenericScroller with the required images
-            // return new GenericScroller(Tester, Images.MyScroller.UpArrow, Images.MyScroller.DownArrow, 
-            //    Images.MyScroller.AtTop, Images.MyScroller.AtBottom, searchRectangle ?? Window);
-            //
-            // or 
-            // 3. Use your own IScroller implementation 
-            //
-
-            return null;
+            return new DetectedVerticalScroller(this, searchRectangle);
         }
 
         /// <summary>

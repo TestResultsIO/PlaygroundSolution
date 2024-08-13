@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Progile.TRIO.BaseModel" Version="5.6.0.99-preview3" />
-    <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="5.6.99-preview03" />
+    <PackageReference Include="Progile.TRIO.BaseModel" Version="5.7.0" />
+    <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="5.7.0.1" />
   </ItemGroup>
 
   <ItemGroup>

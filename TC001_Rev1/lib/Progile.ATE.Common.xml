@@ -635,6 +635,16 @@
             </list>
             </summary>
         </member>
+        <member name="P:Progile.ATE.Common.GlobalEngineParameters.ResultLogFailedTagStart">
+            <summary>
+            Tags used for highlighting. Internal use only.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.GlobalEngineParameters.ResultLogFailedTagEnd">
+            <summary>
+            Tags used for highlighting. Internal use only.
+            </summary>
+        </member>
         <member name="P:Progile.ATE.Common.GlobalEngineParameters.AutoNumberPattern">
             <summary>
              Pattern used for screenshot number generation (Default: "000", numbers are padded with zeros to its left to have at least 3 digits)

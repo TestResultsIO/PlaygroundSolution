@@ -108,6 +108,16 @@
             Minimum version to include Table Structure Detection
             </summary>
         </member>
+        <member name="F:Progile.ATE.TestFramework.VersionByFeatureSet.MONITORING_ACTIONS">
+            <summary>
+            Minimum version to include Monitoring Actions
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.TestFramework.VersionByFeatureSet.SCROLLER_DETECTION">
+            <summary>
+            Minimum version to include Scroller Structure Detection
+            </summary>
+        </member>
         <member name="M:Progile.ATE.TestFramework.VersionByFeatureSet.MinimumVersion(System.Version[])">
             <summary>
             Returns the minimum version required by a set of given version numbers.
@@ -1133,7 +1143,7 @@
             <param name="filters">Specifes a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
             <returns></returns>
         </member>
-        <member name="M:Progile.ATE.TestFramework.ITestee.StartMonitoringAction(System.Action{Progile.ATE.TestFramework.ITester},System.Double,System.Boolean)">
+        <member name="M:Progile.ATE.TestFramework.ITestee.StartMonitoringAction(System.Action{Progile.ATE.TestFramework.ITester},System.Double,System.Boolean,System.Guid)">
             <summary>
             Starts a monitoring action that is periodically executed. Useful to handle popups or errors that might appear during the test execution.
             Depending on the <paramref name="abortOnException"/> flag, in the case the <paramref name="monitoringAction"/> throws an exception,
@@ -1142,13 +1152,19 @@
             <param name="monitoringAction">The action to execute. E.g. <code>if(App.Popup.IsOnScreen()) App.Popup.Close();</code></param>
             <param name="monitoringIntervalInSec">The time to wait between each execution of the <paramref name="monitoringAction"/></param>
             <param name="abortOnException">Whether to set the test case to Aborted if the monitoring action throws an exception.</param>
+            <param name="id">The id of the action. Set this ID to ensure a certain action is only registered once</param>
             <returns>Returns a Guid that can be used to stop this particular monitoring action</returns>
         </member>
         <member name="M:Progile.ATE.TestFramework.ITestee.StopMonitoringAction(System.Nullable{System.Guid})">
             <summary>
             Stops the first registered or the specified monitoring action
             </summary>
-            <param name="monitoringActionId">The action Id to stop (returned by <see cref="M:Progile.ATE.TestFramework.ITestee.StartMonitoringAction(System.Action{Progile.ATE.TestFramework.ITester},System.Double,System.Boolean)"/>)</param>
+            <param name="monitoringActionId">The action Id to stop (returned by <see cref="M:Progile.ATE.TestFramework.ITestee.StartMonitoringAction(System.Action{Progile.ATE.TestFramework.ITester},System.Double,System.Boolean,System.Guid)"/>)</param>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.StopAllMonitoringActions">
+            <summary>
+            Stops all registered monitoring actions
+            </summary>
         </member>
         <member name="M:Progile.ATE.TestFramework.ITestee.RegisterForUpdateCheck(System.Action{System.Double},System.Double,Progile.ATE.Common.IImageFilter[])">
             <summary>
@@ -1258,6 +1274,20 @@
             <param name="foundColumns"><see cref="T:Progile.ATE.Common.ResultRectangle">s of previously detected column labels. </see></param>
             <param name="filters">Specifies a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
             <returns>The table structure that has been detected.</returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.DetectVerticalScroller(Progile.ATE.Common.IImageFilter[])">
+            <summary>
+            Starts the detection of a vertical scroller.
+            </summary>
+            <param name="filters">Specifies a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
+            <returns>The structural elements of the vertical scroller that have been detected.</returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.DetectHorizontalScroller(Progile.ATE.Common.IImageFilter[])">
+            <summary>
+            Starts the detection of a horizontal scroller.
+            </summary>
+            <param name="filters">Specifies a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
+            <returns>The structural elements of the horizontal scroller that have been detected.</returns>
         </member>
         <member name="M:Progile.ATE.Common.ITestRunnerHost.RequestFile(Progile.ATE.TestFramework.RequestableFileTypeEnum,System.String@,System.Boolean)">
             <summary>
