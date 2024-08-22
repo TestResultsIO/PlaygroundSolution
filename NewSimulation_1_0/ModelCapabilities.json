@@ -1,6 +1,10 @@
 {
   "ModelTypeList": [
     {
+      "TypeName": "Progile.TRIO.EnvironmentModel.Window",
+      "BaseTypeName": "Progile.TRIO.BaseModel.BaseScreen"
+    },
+    {
       "TypeName": "Progile.TRIO.BaseModel.BaseScreen",
       "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
       "Interactions": [
@@ -86,6 +90,10 @@
           "HintText": "Sets the search area of this element based on a different element (\"Element in area\")\r\nin the same area to prevent the problem that this element occurs multiple times on the screen."
         }
       ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.IWindow",
+      "BaseTypeName": null
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.Button",
@@ -739,14 +747,6 @@
           "IsObsolete": true
         }
       ]
-    },
-    {
-      "TypeName": "Progile.TRIO.EnvironmentModel.Window",
-      "BaseTypeName": "Progile.TRIO.BaseModel.BaseScreen"
-    },
-    {
-      "TypeName": "Progile.TRIO.BaseModel.IWindow",
-      "BaseTypeName": null
     },
     {
       "TypeName": "NewSimulation_Model.Screens.RecentSign_InActivityTable",
