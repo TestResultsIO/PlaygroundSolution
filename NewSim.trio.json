@@ -9,12 +9,6 @@
       "RaiseImagePathPopupBeforeExecution": false,
       "Id": "00000000-0000-0000-0000-000000000000",
       "Name": "Simulation"
-    },
-    {
-      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentLocal, Progile.Trio.Designer",
-      "MonitorId": 0,
-      "Id": "b8b8ab42-bcaa-4b67-a156-7768345b60c8",
-      "Name": "LocalMonitor"
     }
   ],
   "SolutionVersion": "8.1",
