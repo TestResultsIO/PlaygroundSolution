@@ -23,17 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Progile.TRIO.BaseModel" Version="5.7.0" />
-    <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="5.7.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Progile.ATE.Common">
-      <HintPath>lib\Progile.ATE.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Progile.ATE.TestFramework">
-      <HintPath>lib\Progile.ATE.TestFramework.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
+    <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
+    <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />
   </ItemGroup>
 
 </Project>

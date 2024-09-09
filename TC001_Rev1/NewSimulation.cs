@@ -27,7 +27,7 @@ public class NewSimulation : TestCase
         App.LoginConfirmation.Language.SelectValue($@"English");
         t.Testee.TakeScreenshot($@"Confirmation Page");
         App.LoginConfirmation.CONFIRM.Click(App.LoginConfirmation.WaitForDisappear);
-        t.Report.PassStep($@"Login was successfull");
+        t.Report.PassStep($@"Login was successful");
     }
 
 
