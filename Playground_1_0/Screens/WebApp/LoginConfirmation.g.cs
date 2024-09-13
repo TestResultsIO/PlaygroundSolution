@@ -23,6 +23,7 @@ namespace Playground_Model.Screens.WebApp
             Language = new Progile.TRIO.BaseModel.Dropdown(appBasics: AppBasics, displayName: "Language", imageReference: Images.WebApp.LoginConfirmation.Language.DropdownTextBox, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
             MobileLink = new Progile.TRIO.BaseModel.Button(appBasics: AppBasics, displayName: "Mobile Link", activeImageReference: Images.WebApp.LoginConfirmation.MobileLink.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
             CONFIRM = new Progile.TRIO.BaseModel.Button(appBasics: AppBasics, displayName: "CONFIRM", activeImageReference: Images.WebApp.LoginConfirmation.CONFIRM.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
+            RememberLanguage = new Progile.TRIO.BaseModel.LabelWithCheckbox(appBasics: AppBasics, displayName: "Remember Language", checkboxPosition: RelativePosition.Left, imageReferenceForLabel: Images.WebApp.LoginConfirmation.RememberLanguage.LabelImage, checkedImageReference: Images.WebApp.LoginConfirmation.RememberLanguage.Checkbox._checked, uncheckedImageReference: Images.WebApp.LoginConfirmation.RememberLanguage.Checkbox._unchecked, filters: ScreenSelect) { ParentElement = this };
 
             ConfigureElementProperties();
         }
@@ -36,6 +37,8 @@ namespace Playground_Model.Screens.WebApp
         public Progile.TRIO.BaseModel.Button MobileLink { get; private set; }
 
         public Progile.TRIO.BaseModel.Button CONFIRM { get; private set; }
+
+        public Progile.TRIO.BaseModel.LabelWithCheckbox RememberLanguage { get; private set; }
 
         partial void ConfigureElementProperties();
     }

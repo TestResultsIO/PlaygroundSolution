@@ -23,6 +23,7 @@ public class EndToEndTest : TestCase
         App.Mobile.WebapplicationLink.Click(App.LoginConfirmation.WaitForAppear);
         App.LoginConfirmation.ConfirmationCode.Enter("{{confirmationCode}}");
         App.LoginConfirmation.Language.SelectValue($@"English");
+        App.LoginConfirmation.RememberLanguage.Check();
         t.Testee.TakeScreenshot($@"Confirmation Page");
         App.LoginConfirmation.CONFIRM.Click(App.LoginConfirmation.WaitForDisappear);
         t.Report.PassStep($@"Login was successful");

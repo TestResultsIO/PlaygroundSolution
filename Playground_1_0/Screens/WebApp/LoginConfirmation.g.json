@@ -161,6 +161,51 @@
           "Value": "ScreenSelect"
         }
       ]
+    },
+    {
+      "Id": "de2b253c-9569-4609-976b-2f05e6dd00c7",
+      "Position": {
+        "X": 499,
+        "Y": 475,
+        "Width": 138,
+        "Height": 18
+      },
+      "Name": "RememberLanguage",
+      "Type": "Progile.TRIO.BaseModel.LabelWithCheckbox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Remember Language"
+        },
+        {
+          "Name": "checkboxPosition",
+          "Value": "Left"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReferenceForLabel",
+          "Value": "Images\\WebApp\\LoginConfirmation\\Remember Language\\LabelImage"
+        },
+        {
+          "Name": "checkedImageReference",
+          "Value": "Images\\WebApp\\LoginConfirmation\\Remember Language\\Checkbox\\checked"
+        },
+        {
+          "Name": "uncheckedImageReference",
+          "Value": "Images\\WebApp\\LoginConfirmation\\Remember Language\\Checkbox\\unchecked"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
     }
   ]
 }
