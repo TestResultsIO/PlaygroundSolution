@@ -12,9 +12,9 @@ using Progile.TRIO.EnvironmentModel;
 using static TestImages.Playground;
 
 
-namespace Playground_Model.Screens.WebApp
+namespace Playground_Model.Screens
 {
-	public partial class LoginConfirmation
+	public partial class LoginScreen
 	{
 
         // In this method you can configure settings of the screen and elements. 

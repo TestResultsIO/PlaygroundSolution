@@ -11,17 +11,17 @@
 using Progile.TRIO.BaseModel;
 using static TestImages.Playground;
 
-namespace Playground_Model.Screens.WebApp
+namespace Playground_Model.Screens
 {
     [Screen]
     public partial class LoginScreen : Progile.TRIO.BaseModel.BaseScreen
     {
-        public LoginScreen(PlaygroundApp app) : base(app, @"Login Screen", Images.WebApp.LoginScreen.Screen_Loaded)
+        public LoginScreen(PlaygroundApp app) : base(app, @"Login Screen", Images.LoginScreen.Screen_Loaded)
         {
             App = app;
-            EmailAddress = new Progile.TRIO.BaseModel.TextBox(appBasics: AppBasics, displayName: "Email Address", imageReference: Images.WebApp.LoginScreen.EmailAddress, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
-            Password = new Progile.TRIO.BaseModel.PwTextBox(appBasics: AppBasics, displayName: "Password", imageReference: Images.WebApp.LoginScreen.Password.TextBoxImage, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
-            LOGIN = new Progile.TRIO.BaseModel.Button(appBasics: AppBasics, displayName: "LOGIN", activeImageReference: Images.WebApp.LoginScreen.LOGIN.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
+            EmailAddress = new Progile.TRIO.BaseModel.TextBox(appBasics: AppBasics, displayName: "Email Address", imageReference: Images.LoginScreen.EmailAddress, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
+            Password = new Progile.TRIO.BaseModel.PwTextBox(appBasics: AppBasics, displayName: "Password", imageReference: Images.LoginScreen.Password.TextBoxImage, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
+            LOGIN = new Progile.TRIO.BaseModel.Button(appBasics: AppBasics, displayName: "LOGIN", activeImageReference: Images.LoginScreen.LOGIN.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
 
             ConfigureElementProperties();
         }

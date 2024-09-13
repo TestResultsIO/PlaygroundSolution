@@ -4,9 +4,9 @@
   "DisplayName": "Login Screen",
   "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
   "IsBaseScreen": false,
-  "RelativeLocation": "Screens\\WebApp",
-  "OpenImagePath": "Images\\WebApp\\LoginScreen\\Screen_Loaded",
-  "ScreenImagePath": "Images\\WebApp\\LoginScreen\\Screen_Image",
+  "RelativeLocation": "Screens",
+  "OpenImagePath": "Images\\LoginScreen\\Screen_Loaded",
+  "ScreenImagePath": "Images\\LoginScreen\\Screen_Image",
   "Position": {
     "X": 0,
     "Y": 0,
@@ -39,7 +39,7 @@
         },
         {
           "Name": "imageReference",
-          "Value": "Images\\WebApp\\LoginScreen\\Email Address"
+          "Value": "Images\\LoginScreen\\Email Address"
         },
         {
           "Name": "useVisualSense",
@@ -76,7 +76,7 @@
         },
         {
           "Name": "imageReference",
-          "Value": "Images\\WebApp\\LoginScreen\\Password\\TextBoxImage"
+          "Value": "Images\\LoginScreen\\Password\\TextBoxImage"
         },
         {
           "Name": "useVisualSense",
@@ -113,7 +113,7 @@
         },
         {
           "Name": "activeImageReference",
-          "Value": "Images\\WebApp\\LoginScreen\\LOGIN\\active"
+          "Value": "Images\\LoginScreen\\LOGIN\\active"
         },
         {
           "Name": "useVisualSense",

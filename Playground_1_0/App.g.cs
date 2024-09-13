@@ -9,10 +9,7 @@
 //------------------------------------------------------------------------------
 
 using Progile.TRIO.BaseModel;
-using Playground_Model.Screens.Documents;
-using Playground_Model.Screens.WebApp;
-using Playground_Model.Screens.MobileApp;
-using Playground_Model.Screens.DesktopApp;
+using Playground_Model.Screens;
 
 namespace Playground_Model
 {
@@ -21,23 +18,11 @@ namespace Playground_Model
     {
         partial void InitScreens()
         {
-            InvoicePDF = new InvoicePDF(this);
-            LoginConfirmation = new LoginConfirmation(this);
             LoginScreen = new LoginScreen(this);
-            Mobile = new Mobile(this);
-            RecentSign_InActivity = new RecentSign_InActivity(this);
         }
 
 
-        public InvoicePDF InvoicePDF { get; set; }
-        
-        public LoginConfirmation LoginConfirmation { get; set; }
-        
         public LoginScreen LoginScreen { get; set; }
-        
-        public Mobile Mobile { get; set; }
-        
-        public RecentSign_InActivity RecentSign_InActivity { get; set; }
         
     }
 }
