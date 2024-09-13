@@ -1,0 +1,115 @@
+{
+  "Id": "3427ecab-3939-4d99-979a-0b1810407560",
+  "Name": "RecentSign_InActivity",
+  "DisplayName": "Recent Sign-In Activity",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\DesktopApp",
+  "OpenImagePath": "Images\\DesktopApp\\RecentSign_InActivity\\Screen_Loaded",
+  "ScreenImagePath": "Images\\DesktopApp\\RecentSign_InActivity\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1280,
+    "Height": 720
+  },
+  "Elements": [
+    {
+      "Id": "7d0900c2-f245-43be-8d84-9d8a86033ecc",
+      "Position": {
+        "X": 284,
+        "Y": 192,
+        "Width": 80,
+        "Height": 19
+      },
+      "Name": "RecentSign_InActivityTable",
+      "Type": "Custom.Table",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Recent Sign-In Activity Table"
+        },
+        {
+          "Name": "SearchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "tableLoadedImage",
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\User Name"
+        },
+        {
+          "Name": "TableDetectionType",
+          "Value": "Structure"
+        },
+        {
+          "Name": "InitScroller",
+          "Value": "false"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\User Name"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Job Title"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Company Name"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Country"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Last Invoice"
+        }
+      ],
+      "ClassFiles": [
+        "Screens\\DesktopApp\\RecentSign_InActivityTable"
+      ]
+    },
+    {
+      "Id": "ecc1a82f-60c0-47c2-8c7e-47bedf0a0c71",
+      "Position": {
+        "X": 1092,
+        "Y": 243,
+        "Width": 27,
+        "Height": 30
+      },
+      "Name": "PDFIconButton",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "PDF Icon Button"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\PDF Icon Button\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ]
+}

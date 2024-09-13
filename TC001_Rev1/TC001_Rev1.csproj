@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="NewSimulation_Model" />
+    <Using Include="Playground_Model" />
     <Using Include="Progile.ATE.Common" />
     <Using Include="Progile.ATE.TestFramework;" />
     <Using Include="Progile.TRIO.BaseModel" />
@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewSimulation_1_0\NewSimulation_1_0.csproj" />
+    <ProjectReference Include="..\PlayGround_1_0\Playground_1_0.csproj" />
   </ItemGroup>
 
 </Project>

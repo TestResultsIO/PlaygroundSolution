@@ -1,0 +1,125 @@
+{
+  "Id": "f3e3108a-07ce-4954-8b68-06c929590e53",
+  "Name": "InvoicePDF",
+  "DisplayName": "Invoice PDF",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\Documents",
+  "OpenImagePath": "Images\\Documents\\InvoicePDF\\Screen_Loaded",
+  "ScreenImagePath": "Images\\Documents\\InvoicePDF\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1280,
+    "Height": 720
+  },
+  "Elements": [
+    {
+      "Id": "c304307b-f3e8-4752-b464-38682a04fbc9",
+      "AnchorElementId": "c40c1f4f-5528-41e0-9164-7ee3c11dce9c",
+      "Position": {
+        "X": 847,
+        "Y": 625,
+        "Width": 40,
+        "Height": 16
+      },
+      "Name": "Total",
+      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Total"
+        },
+        {
+          "Name": "valuePosition",
+          "Value": "Right"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReferenceForLabel",
+          "Value": "Images\\Documents\\InvoicePDF\\Total"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "3fe322e6-e901-4662-8b03-80809ae60f3e",
+      "Position": null,
+      "Name": "Rate_Price",
+      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Rate/Price"
+        },
+        {
+          "Name": "valuePosition",
+          "Value": "Below"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Text"
+        },
+        {
+          "Name": "searchTextForLabel",
+          "Value": "Rate/Price"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "c40c1f4f-5528-41e0-9164-7ee3c11dce9c",
+      "Position": {
+        "X": 858,
+        "Y": 599,
+        "Width": 29,
+        "Height": 16
+      },
+      "Name": "Tax",
+      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Tax"
+        },
+        {
+          "Name": "valuePosition",
+          "Value": "Below"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReferenceForLabel",
+          "Value": "Images\\Documents\\InvoicePDF\\Tax"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ]
+}

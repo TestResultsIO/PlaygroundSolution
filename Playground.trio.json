@@ -1,0 +1,22 @@
+{
+  "CustomerId": "00000000-0000-0000-0000-000000000000",
+  "ProjectId": "00000000-0000-0000-0000-000000000000",
+  "ServerUri": "https://portal.testresults.io",
+  "Environments": [
+    {
+      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentImage, Progile.Trio.Designer",
+      "ImagePathStaticEnvironment": null,
+      "RaiseImagePathPopupBeforeExecution": false,
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "Name": "Playground"
+    }
+  ],
+  "SolutionVersion": "9.0",
+  "SolutionType": null,
+  "ElementsFilter": [],
+  "GetLabelTextSettings": {
+    "OcrPadding": 5,
+    "MaxDetectedCharacters": 40,
+    "MaxDetectedWords": 5
+  }
+}
