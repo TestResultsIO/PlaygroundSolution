@@ -19,13 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\Playground_Images\DesktopApp\" />
-    <Folder Include="Images\Playground_Images\Documents\" />
-    <Folder Include="Images\Playground_Images\MobileApp\" />
-    <Folder Include="Images\Playground_Images\WebApp\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
     <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />
