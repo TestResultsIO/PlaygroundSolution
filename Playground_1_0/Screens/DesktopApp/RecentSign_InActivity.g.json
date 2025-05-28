@@ -51,23 +51,28 @@
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\User Name"
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\User Name",
+          "DisplayValue": "User Name"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Job Title"
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Job Title",
+          "DisplayValue": "Job Title"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Company Name"
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Company Name",
+          "DisplayValue": "Company Name"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Country"
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Country",
+          "DisplayValue": "Country"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Last Invoice"
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\Last Invoice",
+          "DisplayValue": "Last Invoice"
         }
       ],
       "ClassFiles": [

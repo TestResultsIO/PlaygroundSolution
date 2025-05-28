@@ -5,14 +5,12 @@
   "Environments": [
     {
       "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentImage, Progile.Trio.Designer",
-      "ImagePathStaticEnvironment": null,
       "RaiseImagePathPopupBeforeExecution": false,
       "Id": "00000000-0000-0000-0000-000000000000",
       "Name": "Playground"
     }
   ],
-  "SolutionVersion": "9.0",
-  "SolutionType": null,
+  "SolutionVersion": "9.6",
   "ElementsFilter": [],
   "GetLabelTextSettings": {
     "OcrPadding": 5,
