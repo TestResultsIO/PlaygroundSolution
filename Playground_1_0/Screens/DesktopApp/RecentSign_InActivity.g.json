@@ -23,7 +23,8 @@
         "Height": 19
       },
       "Name": "RecentSign_InActivityTable",
-      "Type": "Custom.Table",
+      "Type": "Progile.TRIO.BaseModel.TableBase`2",
+      "IsTableElement": true,
       "Parameters": [
         {
           "Name": "appBasics",

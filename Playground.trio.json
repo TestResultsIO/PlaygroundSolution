@@ -10,8 +10,7 @@
       "Name": "Playground"
     }
   ],
-  "SolutionVersion": "9.6",
-  "ElementsFilter": [],
+  "SolutionVersion": "9.8",
   "GetLabelTextSettings": {
     "OcrPadding": 5,
     "MaxDetectedCharacters": 40,

@@ -1,3 +1,9 @@
 {
-  "ScreenSets": []
+  "ElementsFilter": [
+    "Progile.TRIO.BaseModel.Checkbox",
+    "Progile.TRIO.BaseModel.DropdownMenu",
+    "Progile.TRIO.BaseModel.LabelWithButton",
+    "Progile.TRIO.BaseModel.GenericScroller",
+    "Progile.TRIO.BaseModel.HorizontalScroller"
+  ]
 }
