@@ -46,7 +46,7 @@ public class EndToEndTest : TestCase
         ExpectedResults = @"The invoice total is shown as $93.50")]
     public void Step4(ITester t)
     {
-        t.Report.PassFailStep(
+        t.PassFailStep(
             App.InvoicePDF.Total.VerifyValue($@"$93.50", out var actualValue),
             $@"The expected value {/*value*/ $@"$93.50"} was shown correctly for {/*element*/ App.InvoicePDF.Total}.",
             $@"The value for {/*element*/ App.InvoicePDF.Total} was {actualValue} instead of the expected value {/*value*/ $@"$93.50"}.");

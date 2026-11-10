@@ -2,7 +2,7 @@
   "Id": "b2245522-09a7-4214-89c1-90cc9b1b3d66",
   "Name": "LoginConfirmation",
   "DisplayName": "Login Confirmation",
-  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "BaseClass": "TestResults.BaseModel.BaseScreen",
   "IsBaseScreen": false,
   "RelativeLocation": "Screens\\WebApp",
   "OpenImagePath": "Images\\WebApp\\LoginConfirmation\\Screen_Loaded",
@@ -23,7 +23,7 @@
         "Height": 16
       },
       "Name": "ConfirmationCode",
-      "Type": "Progile.TRIO.BaseModel.TextBox",
+      "Type": "TestResults.BaseModel.TextBox",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -38,7 +38,7 @@
           "Value": "Image"
         },
         {
-          "Name": "imageReference",
+          "Name": "image",
           "Value": "Images\\WebApp\\LoginConfirmation\\Confirmation Code"
         },
         {
@@ -60,7 +60,7 @@
         "Height": 19
       },
       "Name": "Language",
-      "Type": "Progile.TRIO.BaseModel.Dropdown",
+      "Type": "TestResults.BaseModel.Dropdown",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -75,7 +75,7 @@
           "Value": "Image"
         },
         {
-          "Name": "imageReference",
+          "Name": "image",
           "Value": "Images\\WebApp\\LoginConfirmation\\Language\\DropdownTextBox"
         },
         {
@@ -97,7 +97,7 @@
         "Height": 76
       },
       "Name": "MobileLink",
-      "Type": "Progile.TRIO.BaseModel.Button",
+      "Type": "TestResults.BaseModel.Button",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -112,8 +112,8 @@
           "Value": "Image"
         },
         {
-          "Name": "activeImageReference",
-          "Value": "Images\\WebApp\\LoginConfirmation\\Mobile Link\\active"
+          "Name": "activeImage",
+          "Value": "Images\\WebApp\\LoginConfirmation\\Mobile Link\\Active"
         },
         {
           "Name": "useVisualSense",
@@ -134,7 +134,7 @@
         "Height": 14
       },
       "Name": "CONFIRM",
-      "Type": "Progile.TRIO.BaseModel.Button",
+      "Type": "TestResults.BaseModel.Button",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -149,8 +149,8 @@
           "Value": "Image"
         },
         {
-          "Name": "activeImageReference",
-          "Value": "Images\\WebApp\\LoginConfirmation\\CONFIRM\\active"
+          "Name": "activeImage",
+          "Value": "Images\\WebApp\\LoginConfirmation\\CONFIRM\\Active"
         },
         {
           "Name": "useVisualSense",
@@ -171,7 +171,7 @@
         "Height": 18
       },
       "Name": "RememberLanguage",
-      "Type": "Progile.TRIO.BaseModel.LabelWithCheckbox",
+      "Type": "TestResults.BaseModel.LabelWithCheckbox",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -190,7 +190,7 @@
           "Value": "Image"
         },
         {
-          "Name": "imageReferenceForLabel",
+          "Name": "ForLabelImage",
           "Value": "Images\\WebApp\\LoginConfirmation\\Remember Language\\LabelImage"
         },
         {

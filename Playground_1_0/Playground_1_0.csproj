@@ -1,7 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
     <AssemblyName>Playground_Model</AssemblyName>
@@ -13,19 +12,15 @@
     <AssemblyVersion>1.0.*</AssemblyVersion>
     <FileVersion>1.0</FileVersion>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="lib\**" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Images\Playground_Images\" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
-    <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
-    <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />
+    <PackageReference Include="TestResults.BaseModel" Version="*" />
+    <PackageReference Include="TestResults.Engine" Version="*" />
+    <PackageReference Include="TestResults.EnvironmentModel.Windows" Version="6.0.4.5" />
   </ItemGroup>
-
 </Project>

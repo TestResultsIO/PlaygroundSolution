@@ -2,7 +2,7 @@
   "Id": "3427ecab-3939-4d99-979a-0b1810407560",
   "Name": "RecentSign_InActivity",
   "DisplayName": "Recent Sign-In Activity",
-  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "BaseClass": "TestResults.BaseModel.BaseScreen",
   "IsBaseScreen": false,
   "RelativeLocation": "Screens\\DesktopApp",
   "OpenImagePath": "Images\\DesktopApp\\RecentSign_InActivity\\Screen_Loaded",
@@ -23,7 +23,7 @@
         "Height": 19
       },
       "Name": "RecentSign_InActivityTable",
-      "Type": "Progile.TRIO.BaseModel.TableBase`2",
+      "Type": "TestResults.BaseModel.TableBase`2",
       "IsTableElement": true,
       "Parameters": [
         {
@@ -35,7 +35,7 @@
           "Value": "Recent Sign-In Activity Table"
         },
         {
-          "Name": "SearchType",
+          "Name": "searchType",
           "Value": "Image"
         },
         {
@@ -54,6 +54,10 @@
           "Name": "ColumnHeader",
           "Value": "Images\\DesktopApp\\RecentSign_InActivity\\Recent Sign-In Activity Table\\User Name",
           "DisplayValue": "User Name"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
         },
         {
           "Name": "ColumnHeader",
@@ -89,7 +93,7 @@
         "Height": 30
       },
       "Name": "PDFIconButton",
-      "Type": "Progile.TRIO.BaseModel.Button",
+      "Type": "TestResults.BaseModel.Button",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -104,8 +108,8 @@
           "Value": "Image"
         },
         {
-          "Name": "activeImageReference",
-          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\PDF Icon Button\\active"
+          "Name": "activeImage",
+          "Value": "Images\\DesktopApp\\RecentSign_InActivity\\PDF Icon Button\\Active"
         },
         {
           "Name": "useVisualSense",

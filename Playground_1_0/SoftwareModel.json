@@ -1,9 +1,9 @@
 {
   "ElementsFilter": [
-    "Progile.TRIO.BaseModel.Checkbox",
-    "Progile.TRIO.BaseModel.DropdownMenu",
-    "Progile.TRIO.BaseModel.LabelWithButton",
-    "Progile.TRIO.BaseModel.GenericScroller",
-    "Progile.TRIO.BaseModel.HorizontalScroller"
+    "TestResults.BaseModel.Checkbox",
+    "TestResults.BaseModel.DropdownMenu",
+    "TestResults.BaseModel.LabelWithButton",
+    "TestResults.BaseModel.GenericScroller",
+    "TestResults.BaseModel.HorizontalScroller"
   ]
 }

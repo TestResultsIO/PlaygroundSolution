@@ -1,7 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
     <Title>NewSimulation</Title>
@@ -11,34 +10,23 @@
     <AssemblyVersion>1.0.*</AssemblyVersion>
     <FileVersion>1.0</FileVersion>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="EvidenceDirectory\**" />
     <None Remove="lib\**" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
-    <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
-    <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />
-  </ItemGroup>
-
   <ItemGroup>
     <Using Include="Playground_Model" />
     <Using Include="Progile.ATE.Common" />
     <Using Include="Progile.ATE.TestFramework;" />
-    <Using Include="Progile.TRIO.BaseModel" />
+    <Using Include="TestResults.BaseModel" />
     <Using Include="TestImages.TC001_Rev1">
       <Static>True</Static>
     </Using>
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Images\" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\PlayGround_1_0\Playground_1_0.csproj" />
   </ItemGroup>
-
 </Project>

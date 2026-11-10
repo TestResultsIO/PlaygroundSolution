@@ -2,7 +2,7 @@
   "Id": "c8567e44-0d88-4500-a7d2-a22f96cfa665",
   "Name": "Mobile",
   "DisplayName": "Mobile",
-  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "BaseClass": "TestResults.BaseModel.BaseScreen",
   "IsBaseScreen": false,
   "RelativeLocation": "Screens\\MobileApp",
   "OpenImagePath": "Images\\MobileApp\\Mobile\\Screen_Loaded",
@@ -23,7 +23,7 @@
         "Height": 19
       },
       "Name": "ConfirmationCode",
-      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
+      "Type": "TestResults.BaseModel.LabelWithValue",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -42,16 +42,18 @@
           "Value": "Image"
         },
         {
-          "Name": "imageReferenceForLabel",
+          "Name": "image",
           "Value": "Images\\MobileApp\\Mobile\\Confirmation Code"
-        },
-        {
-          "Name": "gridWidth",
-          "Value": "250"
         },
         {
           "Name": "filters",
           "Value": "ScreenSelect"
+        }
+      ],
+      "ScreenEditorPropertySavedValues": [
+        {
+          "PropertyName": "GridWidth",
+          "Value": 250
         }
       ]
     },
@@ -64,7 +66,7 @@
         "Height": 81
       },
       "Name": "WebapplicationLink",
-      "Type": "Progile.TRIO.BaseModel.Button",
+      "Type": "TestResults.BaseModel.Button",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -79,8 +81,8 @@
           "Value": "Image"
         },
         {
-          "Name": "activeImageReference",
-          "Value": "Images\\MobileApp\\Mobile\\Webapplication Link\\active"
+          "Name": "activeImage",
+          "Value": "Images\\MobileApp\\Mobile\\Webapplication Link\\Active"
         },
         {
           "Name": "useVisualSense",

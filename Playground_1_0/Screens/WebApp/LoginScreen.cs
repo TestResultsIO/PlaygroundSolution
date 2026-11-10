@@ -6,8 +6,8 @@ using System.Text;
 
 using Progile.ATE.Common;
 using Progile.ATE.TestFramework;
-using Progile.TRIO.BaseModel;
-using Progile.TRIO.EnvironmentModel;
+using TestResults.BaseModel;
+using TestResults.EnvironmentModel;
 
 using static TestImages.Playground;
 

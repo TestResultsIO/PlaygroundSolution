@@ -2,7 +2,7 @@
   "Id": "404f6429-a121-43e4-8927-2348f9d87bf4",
   "Name": "LoginScreen",
   "DisplayName": "Login Screen",
-  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "BaseClass": "TestResults.BaseModel.BaseScreen",
   "IsBaseScreen": false,
   "RelativeLocation": "Screens\\WebApp",
   "OpenImagePath": "Images\\WebApp\\LoginScreen\\Screen_Loaded",
@@ -23,7 +23,7 @@
         "Height": 15
       },
       "Name": "EmailAddress",
-      "Type": "Progile.TRIO.BaseModel.TextBox",
+      "Type": "TestResults.BaseModel.TextBox",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -38,7 +38,7 @@
           "Value": "Image"
         },
         {
-          "Name": "imageReference",
+          "Name": "image",
           "Value": "Images\\WebApp\\LoginScreen\\Email Address"
         },
         {
@@ -60,7 +60,7 @@
         "Height": 15
       },
       "Name": "Password",
-      "Type": "Progile.TRIO.BaseModel.PwTextBox",
+      "Type": "TestResults.BaseModel.PwTextBox",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -75,7 +75,7 @@
           "Value": "Image"
         },
         {
-          "Name": "imageReference",
+          "Name": "image",
           "Value": "Images\\WebApp\\LoginScreen\\Password\\TextBoxImage"
         },
         {
@@ -97,7 +97,7 @@
         "Height": 14
       },
       "Name": "LOGIN",
-      "Type": "Progile.TRIO.BaseModel.Button",
+      "Type": "TestResults.BaseModel.Button",
       "Parameters": [
         {
           "Name": "appBasics",
@@ -112,8 +112,8 @@
           "Value": "Image"
         },
         {
-          "Name": "activeImageReference",
-          "Value": "Images\\WebApp\\LoginScreen\\LOGIN\\active"
+          "Name": "activeImage",
+          "Value": "Images\\WebApp\\LoginScreen\\LOGIN\\Active"
         },
         {
           "Name": "useVisualSense",

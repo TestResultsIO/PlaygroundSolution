@@ -1,7 +1,7 @@
 ﻿using Progile.ATE.Common;
 using Progile.ATE.TestFramework;
-using Progile.TRIO.BaseModel;
-using Progile.TRIO.EnvironmentModel;
+using TestResults.BaseModel;
+using TestResults.EnvironmentModel;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -12,17 +12,19 @@ namespace Playground_Model
 {
     public partial class PlaygroundApp : IAppBasics
     {
+        private readonly EnvironmentApp environmentApp;
         public static bool versionLogged; // this needs to be static, because we want to log the version only once over all instances
         private readonly Dictionary<string, object> _testCaseDataStorage = new Dictionary<string, object>();
 
         public PlaygroundApp(ITester t)
         {
             Tester = t;
-            SystemHelpers = new SystemHelpers(t);
+            environmentApp = new EnvironmentApp(t);
+            SystemHelpers = environmentApp;
 
             t.Debug.HintLevel = TesterHintLevels.All;
             t.Properties.DefaultOcrEngine = OcrEngines.NativeEngine;
-            BaseScreen.DefaultCanScrollToFindElement = true;
+            ModelDefaults.Set((BaseScreen e) => e.CanScrollToFindElement, true);
 
             // Log version of all required models
             LogSwModelVersion();
@@ -52,7 +54,9 @@ namespace Playground_Model
 
         partial void InitScreens();
 
-        public IScroller GetScroller(Select searchRectangle = null, bool requiresFocus = false)
+        public ModelDefaultRegistry ModelDefaults { get; } = new();
+
+        public IScroller GetScroller(Select searchRectangle = null)
         {
             return new DetectedVerticalScroller(this, searchRectangle);
         }

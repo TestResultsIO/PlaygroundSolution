@@ -1,6 +1,6 @@
 
 using System;
-using Progile.TRIO.BaseModel;
+using TestResults.BaseModel;
 
 namespace Playground_Model.Screens.DesktopApp
 {
