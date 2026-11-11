@@ -2,6 +2,12 @@
 public class EndToEndTest : TestCase
 {
 
+    [PreconditionStep]
+    public void PreconditionStep(ITester t)
+    {
+        t.ReportProgress($@"blup");
+    }
+
     [TestStep(1,
         TestInput = @"Login with default user credentials")]
     public void Step1(ITester t)
