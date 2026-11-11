@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>NewApp_Model</AssemblyName>
+    <RootNamespace>NewApp_Model</RootNamespace>
+    <Title>NewApp </Title>
+    <Product>NewApp</Product>
+    <Description>TestResults Software Model Project</Description>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Screens\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TestResults.Engine" Version="*" />
+    <PackageReference Include="TestResults.BaseModel" Version="*" />
+    <PackageReference Include="TestResults.EnvironmentModel.Windows" Version="*" />
+  </ItemGroup>
+
+</Project>

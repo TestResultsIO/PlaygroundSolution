@@ -11,6 +11,7 @@
     }
   ],
   "SolutionVersion": "10.1",
+  "SolutionType":  "Offline",
   "GetLabelTextSettings": {
     "OcrPadding": 5,
     "MaxDetectedCharacters": 40,
